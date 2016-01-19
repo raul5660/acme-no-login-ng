@@ -44,6 +44,7 @@ app.set('view engine', 'jade');
 
 // ---
 
+app.use("/angular.js", express.static(__dirname +"/node_modules/angular/lib/angular.js"));
 app.use(require('body-parser').json());
 
 // ---
